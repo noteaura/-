@@ -1,0 +1,117 @@
+/* Fullscreen blurred background image */
+body {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(200px);
+    margin: 0;
+    height: 100vh;
+    font-family: "Rubik";
+}
+
+.main-body {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 15px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border: solid black 1px; 
+    bottom: 30px;
+    width: 95%;
+}
+
+/* Floating, blurred navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.4); /* Slightly lighter for better contrast */
+    backdrop-filter: blur(20px);
+    border-radius: 100px;
+    padding: 15px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border: solid black 1px; 
+}
+
+/* Navbar list */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar links */
+.navbar a {
+    background-color: transparent;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    height: 14.5px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.navbar .selected-item {
+    background-color: black;
+    color: white;
+}
+
+.search-bar {
+    background-color: transparent;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border: solid black 1px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+    height: 15.5px;
+    font-size: 10.5;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 15px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border: solid black 1px; 
+}
+
+.button-primary {
+    padding: 8px 12px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    height: 14.5px;
+    background-color: black;
+    color: white;
+    border: none;
+}
